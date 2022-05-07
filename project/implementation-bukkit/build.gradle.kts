@@ -1,10 +1,13 @@
 val taboolib_version: String by project
 
 plugins {
-    id("io.izzel.taboolib") version "1.38"
+    id("io.izzel.taboolib") version "1.39"
 }
 
 taboolib {
+    description {
+        name(rootProject.name)
+    }
     install("common", "platform-bukkit")
     options("skip-minimize", "keep-kotlin-module")
     classifier = null
@@ -12,7 +15,7 @@ taboolib {
 }
 
 dependencies {
-    compileOnly(project(":project:common"))
+    api(project(":project:common"))
     compileOnly("ink.ptms:nms-all:1.0.0")
     compileOnly("ink.ptms.core:v11802:11802-minimize:mapped")
     compileOnly("ink.ptms.core:v11802:11802-minimize:universal")
