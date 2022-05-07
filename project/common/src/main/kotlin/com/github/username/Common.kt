@@ -9,7 +9,7 @@ package com.github.username
  */
 object Common {
 
-    fun log(msg: String) {
-        println(msg)
+    fun info(msg: String) {
+        info(msg)
     }
 }
