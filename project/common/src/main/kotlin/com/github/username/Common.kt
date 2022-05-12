@@ -10,6 +10,6 @@ package com.github.username
 object Common {
 
     fun info(msg: String) {
-        info(msg)
+        taboolib.common.platform.function.info(msg)
     }
 }
