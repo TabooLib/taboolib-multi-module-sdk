@@ -12,6 +12,9 @@ dependencies {
 tasks {
     withType<ShadowJar> {
         archiveClassifier.set("")
+        exclude("META-INF/maven/**")
+        exclude("META-INF/tf/**")
+        exclude("module-info.java")
     }
     build {
         dependsOn(shadowJar)
