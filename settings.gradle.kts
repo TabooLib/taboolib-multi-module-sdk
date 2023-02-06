@@ -1,5 +1,5 @@
-rootProject.name = "ExampleProject"
+rootProject.name = "MyHelloWorld"
 
 include("plugin")
-include("project:common")
-include("project:implementation-bukkit")
+include("project:core")
+include("project:runtime-bukkit")
