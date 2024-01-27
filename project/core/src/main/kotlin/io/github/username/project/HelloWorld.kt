@@ -1,4 +1,4 @@
-package me.skymc.helloworld
+package io.github.username.project
 
 import taboolib.module.configuration.Config
 import taboolib.module.configuration.Configuration

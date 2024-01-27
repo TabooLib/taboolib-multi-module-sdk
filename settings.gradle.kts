@@ -1,4 +1,4 @@
-rootProject.name = "MyHelloWorld"
+rootProject.name = "ExampleProject"
 
 include("plugin")
 include("project:core")
