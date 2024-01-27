@@ -32,8 +32,10 @@
 开发版本包含 TabooLib 本体, 用于开发者使用, 但不可运行。
 
 ```
-./gradlew clean build -Papi
+./gradlew clean taboolibBuildApi -PDeleteCode
 ```
+
+> 参数 -PDeleteCode 表示移除所有逻辑代码以减少体积。
 
 ## 总结
 
