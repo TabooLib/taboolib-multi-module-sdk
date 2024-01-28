@@ -1,5 +1,7 @@
 @file:Suppress("PropertyName", "SpellCheckingInspection")
 
+import io.izzel.taboolib.gradle.BUKKIT_ALL
+import io.izzel.taboolib.gradle.UNIVERSAL
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -15,6 +17,9 @@ subprojects {
 
     // TabooLib 配置
     taboolib {
+        env {
+            install(UNIVERSAL, BUKKIT_ALL)
+        }
         version { taboolib = "6.1.0" }
     }
 

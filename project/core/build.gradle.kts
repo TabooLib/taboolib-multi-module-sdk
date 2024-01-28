@@ -6,10 +6,5 @@ dependencies {
     // compileOnly("ink.ptms.core:v11903:11903:universal")
 }
 
-taboolib {
-    // 子模块
-    subproject = true
-    env {
-        install(UNIVERSAL)
-    }
-}
+// 子模块
+taboolib { subproject = true }

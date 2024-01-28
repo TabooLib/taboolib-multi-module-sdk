@@ -10,10 +10,6 @@ taboolib {
             name("Bkm016")
         }
     }
-    env {
-        // 此处写入所有 subprojects 使用到的 TabooLib 模块
-        install(UNIVERSAL, BUKKIT_ALL)
-    }
 }
 
 tasks {
