@@ -6,7 +6,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     java
-    id("io.izzel.taboolib") version "2.0.10"
+    id("io.izzel.taboolib") version "2.0.11"
     id("org.jetbrains.kotlin.jvm") version "1.8.22"
 }
 
@@ -20,7 +20,7 @@ subprojects {
         env {
             install(UNIVERSAL, BUKKIT_ALL)
         }
-        version { taboolib = "6.1.0" }
+        version { taboolib = "6.1.1-beta15" }
     }
 
     // 全局仓库
