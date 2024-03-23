@@ -20,7 +20,7 @@ subprojects {
         env {
             install(UNIVERSAL, BUKKIT_ALL)
         }
-        version { taboolib = "6.1.1-beta15" }
+        version { taboolib = "6.1.1-beta17" }
     }
 
     // 全局仓库
