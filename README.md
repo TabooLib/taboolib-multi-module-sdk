@@ -6,11 +6,11 @@
 
 项目结构如下所示
 
-    MyHelloWorld
+    taboolib-multi-module-sdk
     ├── plugin                     -- 插件打包模块，用于将子模块合并打包
     │   └── build.gradle.kts
     ├── project                    -- 项目目录
-    │   ├── core                   -- 核心模块，公开出去的代码
+    │   ├── core                   -- 核心模块
     │   │   └── build.gradle.kts
     │   └── runtime-bukkit         -- Bukkit 平台启动类，不要把你的业务逻辑写到这里面
     │       └── build.gradle.kts
@@ -39,4 +39,4 @@
 
 ## 总结
 
-插件该怎么写就在 `core` 里怎么写，`runtime-bukkit` 基本不需要改。
+本模块结构仅供参考，实际开发时可自由发挥。
