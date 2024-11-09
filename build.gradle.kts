@@ -5,17 +5,19 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     java
-    id("io.izzel.taboolib") version "2.0.20"
-    id("org.jetbrains.kotlin.jvm") version "1.8.22"
+    id("io.izzel.taboolib") version "2.0.20" apply false
+    id("org.jetbrains.kotlin.jvm") version "1.8.22" apply false
 }
 
 subprojects {
-    apply<JavaPlugin>()
+    apply(plugin = "java")
     apply(plugin = "io.izzel.taboolib")
     apply(plugin = "org.jetbrains.kotlin.jvm")
 
     // TabooLib 配置
-    taboolib {
+    // 这里的配置是全局的，如果你的项目有多个模块，这里的配置会被所有模块共享
+    // 为了降低理解难度，使用这种更加无脑的配置方式
+    configure<TabooLibExtension> {
         description {
             name(rootProject.name)
         }
@@ -26,12 +28,11 @@ subprojects {
         version { taboolib = "6.2.0-beta33" }
     }
 
-    // 全局仓库
+    // 仓库
     repositories {
-        mavenLocal()
         mavenCentral()
     }
-    // 全局依赖
+    // 依赖
     dependencies {
         compileOnly(kotlin("stdlib"))
     }

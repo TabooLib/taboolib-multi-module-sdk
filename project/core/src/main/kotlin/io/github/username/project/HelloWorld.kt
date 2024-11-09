@@ -8,7 +8,7 @@ import taboolib.module.configuration.Configuration
  * 可以开放一些接口
  *
  * 默认情况下这个模块不包含 Bukkit 核心
- * 如果你的插件没有跨平台需求，可以在这个项目中引入 Bukkit 核心，以使用 Bukkit 的 API
+ * 如果你的插件没有跨平台需求，可以在这个项目使用 Bukkit 的 API
  */
 object HelloWorld {
 
