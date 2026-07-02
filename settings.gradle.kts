@@ -1,5 +1,12 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    includeBuild("build-logic")
+}
+
 rootProject.name = "ExampleProject"
 
-include("plugin")
-include("project:core")
-include("project:runtime-bukkit")
+include("core")
+include("runtime-bukkit")
